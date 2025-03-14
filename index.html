@@ -20,7 +20,6 @@
         .overlay {
             position: absolute;
             bottom: 93px;
-            left: auto;
             right: 35%;
             transform: none;
             text-align: center;
@@ -39,11 +38,38 @@
         .overlay a:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Query per dispositivi mobili */
+        @media screen and (max-width: 768px) {
+            .overlay {
+                bottom: 70px; /* Mantiene la posizione simile ma più adatta al mobile */
+                right: 10%;
+            }
+            .overlay a {
+                font-size: 20px;
+                padding: 8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .overlay {
+                bottom: 50px; /* Si sposta leggermente per evitare che sia troppo in basso */
+                right: 5%;
+            }
+            .overlay a {
+                font-size: 18px;
+                padding: 6px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="PaginaTemporaneaSito_Link.jpg" alt="Saiki Coming Soon" style="width: 100%;">
+        <img src="PaginaTemporaneaSito_Link.JPG" alt="Saiki Coming Soon">
         <div class="overlay">
             <p><a href="mailto:info@saiki.it">info@saiki.it</a></p>
             <p><a href="tel:+393454505962">345 4505962</a></p>
