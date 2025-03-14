@@ -21,7 +21,6 @@
             position: absolute;
             bottom: 93px;
             right: 35%;
-            transform: none;
             text-align: center;
             color: white;
         }
@@ -31,7 +30,7 @@
             font-size: 24px;
             display: block;
             margin: 17px 0;
-            padding: 10px;
+            padding: 12px 20px;
             background: rgba(0, 0, 0, 0.5);
             border-radius: 5px;
         }
@@ -43,33 +42,40 @@
             height: auto;
         }
 
-        /* Media Query per dispositivi mobili */
+        /* Media Query per Tablet e Schermi Medi */
         @media screen and (max-width: 768px) {
             .overlay {
-                bottom: 70px; /* Mantiene la posizione simile ma più adatta al mobile */
-                right: 10%;
+                bottom: 60px; /* Sposta leggermente l'overlay in alto per adattarlo */
+                right: 10%; /* Mantiene il posizionamento più coerente */
+                width: auto;
             }
             .overlay a {
                 font-size: 20px;
-                padding: 8px;
+                padding: 10px 18px;
+                width: 200px; /* Mantiene una dimensione adatta */
+                margin: 10px auto;
             }
         }
 
+        /* Media Query per Telefoni */
         @media screen and (max-width: 480px) {
             .overlay {
-                bottom: 50px; /* Si sposta leggermente per evitare che sia troppo in basso */
+                bottom: 40px; /* Ancora più in alto per evitare di tagliare i link */
                 right: 5%;
+                width: auto;
             }
             .overlay a {
                 font-size: 18px;
-                padding: 6px;
+                padding: 8px 15px;
+                width: 180px; /* Dimensione più piccola per adattarsi bene */
+                margin: 8px auto;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="PaginaTemporaneaSito_Link.jpg" alt="Saiki Coming Soon">
+        <img src="PaginaTemporaneaSito_Link.JPG" alt="Saiki Coming Soon">
         <div class="overlay">
             <p><a href="mailto:info@saiki.it">info@saiki.it</a></p>
             <p><a href="tel:+393454505962">345 4505962</a></p>
